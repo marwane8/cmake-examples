@@ -4,5 +4,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 project(Hello VERSION 1.0)
 
+add_subdirectory(math_app)
+
 add_executable(hello hello.cpp)
 target_link_libraries(hello PUBLIC math_app)
+include_directories(hello PUBLIC 
+    "${CMAKE_SOURCE_DIR}"
+    "${CMAKE_SOURCE_DIR}/math_app"
+)
