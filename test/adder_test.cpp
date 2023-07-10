@@ -2,5 +2,8 @@
 #include "adder.h"
 
 TEST(Adding,Adding){
-    ASSERT_EQ(mathapp::addByTwo(3),5);
+
+    int x = 3;
+    int ans = mathapp::addByTwo(x);
+    ASSERT_EQ(ans,5);
 }

@@ -8,5 +8,8 @@ target_link_libraries( math_app_tests
     GTest::gtest_main
 )
 
+include(CTest)
 include(GoogleTest)
-gtest_discover_tests(math_app_tests)
+gtest_add_tests(
+    TARGET math_app_tests
+)
