@@ -26,7 +26,7 @@
         {
             "name": "C++ Test Launch",
             "type": "cppdbg",
-            "request": "test",
+            "request": "launch",
             "program": "${workspaceRoot}/build/test/math_app_tests",
             "preLaunchTask": "build",
             "internalConsoleOptions": "openOnSessionStart",
